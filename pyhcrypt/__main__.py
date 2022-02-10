@@ -18,7 +18,10 @@ def handle(cmd, passwd, srcf, rsf):
 				wf.write(_)
 
 def cli():
-	handle(sys.argv[1], sys.argv[2], sys.argv[3], sys.argv[-1])
+	if len(sys.argv) < 4:
+		print("Usage:\n\tpyhcrypt action password input_file output_file\nor\n\tpython -m pyhcrypt action password input_file output_file\nwhere action can be either \"e\" (for encryption) or \"d\" (for decryption), password is the password, input_file and output_file are the corresponding input and output file respectively.")
+	else:
+		handle(sys.argv[1], sys.argv[2], sys.argv[3], sys.argv[-1])
 
 if __name__ == "__main__":
 	cli()
