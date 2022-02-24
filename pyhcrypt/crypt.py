@@ -2,6 +2,7 @@
 
 from hashlib import blake2b as hash_blake
 from os import urandom
+from sys import byteorder
 
 use_rand_default = True
 
@@ -10,7 +11,6 @@ states = {'h_rand': b'Rg\xc7|\x90\x12\xae\x95\xabP\x94mv\x16)]s2\xc7\x880\xd2^\x
 MAX_KEY_SIZE, SALT_SIZE, PERSON_SIZE, MAX_DIGEST_SIZE = hash_blake.MAX_KEY_SIZE, hash_blake.SALT_SIZE, hash_blake.PERSON_SIZE, hash_blake.MAX_DIGEST_SIZE
 
 i_from_bytes = int.from_bytes
-byteorder = "big"
 
 def xor_bytes(a, b):
 

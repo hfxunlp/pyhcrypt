@@ -60,7 +60,7 @@ or
 
 `pyhcrypt action password input_file output_file`
 
-where `action` can be either `e` (for encryption) or `d` (for decryption), `password` is the password, `input_file` and `output_file` are the corresponding input and output file respectively.
+where `action` can be either `e` (for encryption) or `d` (for decryption), `password` is the password, `input_file` and `output_file` are the corresponding input and output file respectively. `-` for standard input/output.
 
 ## Performance
 
