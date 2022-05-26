@@ -64,7 +64,7 @@ where `action` can be either `e` (for encryption) or `d` (for decryption), `pass
 
 ## Performance
 
-Test with CPython 3.9.7, using a single Intel Core M3-7Y30 CPU thread. Even though python is slower than C, this library still achieves encryption/decryption speeds of 25.6 MB/s.
+Test with CPython 3.10.4, using a single Intel Core M3-7Y30 CPU thread. Even though python is slower than C, this library still achieves encryption/decryption speeds of 31.3 MB/s.
 
 ## A puzzle
 
